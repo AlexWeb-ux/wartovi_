@@ -505,7 +505,7 @@ section.roadmap .roadmap_text_header img {
 }
 section.roadmap .roadmap_text_header::after {
 	content: " ";
-	width: 100%;
+	width: 80%;
 	height: 3px;
 	position: absolute;
 	background-size: contain;

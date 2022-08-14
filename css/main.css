@@ -474,7 +474,7 @@ section.roadmap .wraper .roadmap_inner {
 	justify-content: space-between;
 }
 section.roadmap .roadmap_img img {
-  width: 450px;
+  width: 400px;
 	margin-top: 50px;
 }
 section.roadmap .roadmap_text {
@@ -490,7 +490,7 @@ section.roadmap .arrow {
 	margin-right: 50px;
 }
 section.roadmap .roadmap_text_inner {
-	margin-left: 50px;
+	margin-left: 40px;
 	font-size: 18px;
 	line-height: 1.4;
 }
@@ -501,7 +501,7 @@ section.roadmap .roadmap_text_header {
 	position: relative;
 }
 section.roadmap .roadmap_text_header img {
-  width: 50px;
+  width: 40px;
 }
 section.roadmap .roadmap_text_header::after {
 	content: " ";

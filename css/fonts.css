@@ -1,0 +1,10 @@
+/* font-family: "InterRegular"; */
+@font-face {
+	font-family: "InterRegular";
+	src: url("../fonts/InterRegular/Inter-Regular.eot");
+	src: url("../fonts/InterRegular/Inter-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/InterRegular/Inter-Regular.woff") format("woff"),
+	url("../fonts/InterRegular/Inter-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

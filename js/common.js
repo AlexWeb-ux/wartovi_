@@ -88,24 +88,21 @@ $(document).ready(function() {
 	});
 	//Аудио
 	$(document).ready(function () {
-		$('.start-modal').fadeIn();
-		$('.dark-block').fadeIn();
-		$('body').addClass('overflow-hidden');
-	})
-
-	
+		$('.start_modal').fadeIn();
+		$('.dark_block').fadeIn();
+		$('body').addClass('overflow_hidden');
+	})	
 	$('#onSoundBtn').click(function () {
 		document.getElementById('audioFirst').play();
 		document.getElementById('1').classList.add('active');
-		$('.start-modal').fadeOut();
-		$('.dark-block').fadeOut();
-		$('body').removeClass('overflow-hidden');
-	})
-	
+		$('.start_modal').fadeOut();
+		$('.dark_block').fadeOut();
+		$('body').removeClass('overflow_hidden');
+	})	
 	$('#offSoundBtn').click(function () {
-		$('.start-modal').fadeOut();
-		$('.dark-block').fadeOut();
-		$('body').removeClass('overflow-hidden');
+		$('.start_modal').fadeOut();
+		$('.dark_block').fadeOut();
+		$('body').removeClass('overflow_hidden');
 	})
 	$('.buttons a').click(function () {
 		if (this.classList.contains('active')) {

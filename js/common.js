@@ -104,6 +104,18 @@ $(document).ready(function() {
 		$('.dark_block').fadeOut();
 		$('body').removeClass('overflow_hidden');
 	})
+	$('.start_modal .close_modal').click(function () {
+		$('.start_modal').fadeOut();
+		$('.dark_block').fadeOut();
+		$('body').removeClass('overflow_hidden');
+	})
+	$(document).on('keyup', function(e) {
+		if ( e.key == "Escape" ) {
+			$('.start_modal').fadeOut();
+		  $('.dark_block').fadeOut();
+		  $('body').removeClass('overflow_hidden');
+		}
+	});
 	$('.buttons a').click(function () {
 		if (this.classList.contains('active')) {
 			this.removeAttribute('class');

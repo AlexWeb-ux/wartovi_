@@ -77,7 +77,9 @@ img {
 	background: rgba(52, 62, 92, 0.46);
 	z-index: 10;
 	display: none;
+	transition: 0.5s;
 }
+.telegram_modal,
 .start_modal {
 	background: #fff;
 	border-radius: 20px;
@@ -90,6 +92,7 @@ img {
 	display: none;
 	bottom: 15px;
 	right: 15px;
+	transition: 0.5s;
 }
 .overflow_hidden {
 	overflow: hidden!important;
@@ -97,14 +100,29 @@ img {
 .start_modal button {
 	background-color: #343E5C;
 	border: none;
-	border-radius: 15px;
-  padding: 0 15px;
+	border-radius: 50px;
+	cursor: pointer;
 }
+.telegram_modal .telegram_modal_header,
 .start_modal .start_modal_header {
   color: #343E5C;
 	font-size: 20px;
 	margin-top: 0;
 }
+.telegram_modal .close_modal::before, 
+.start_modal .close_modal::before {
+	content: "";
+  width: 18px;
+	height: 18px;
+	background-image: url(../img/close.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	background-position: center center;
+	right: 15px;
+	top: 15px;
+}
+
 /*loader*/
 .loader {
   background-image: url(../img/bg-loader.jpg);

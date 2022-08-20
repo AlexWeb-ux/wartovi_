@@ -22,6 +22,44 @@ $(document).ready(function() {
 			offset: -80
 		});
 	};
+	//Egg
+	  var $element = $('.roadmap');
+    let counter = 0;
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $element.offset().top + $element.height();
+			//start
+		  //	var offset = $element.offset().top
+		 if (scroll > offset && counter == 0) {
+			setTimeout(function() {
+				$(".roadmap_egg_1").css("opacity","0");
+				$(".roadmap_num_1").css("opacity","1");
+		  }, 300);
+			setTimeout(function() {
+				$(".roadmap_egg_2").css("opacity","0");
+				$(".roadmap_num_2").css("opacity","1");
+		  }, 600);
+			setTimeout(function() {
+				$(".roadmap_egg_3").css("opacity","0");
+				$(".roadmap_num_3").css("opacity","1");
+		  }, 900);				
+				counter = 1;
+			}
+		});
+		var $proj = $('.project');
+		let count = 0;
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $proj.offset().top + $proj.height();
+			//start
+		  //	var offset = $element.offset().top
+		 if (scroll > offset && count == 0) {
+			$('.telegram_modal').fadeIn();
+		  $('.dark_block').fadeIn();
+		  $('body').addClass('overflow_hidden');
+			count = 1;			
+			}
+		});
 	//Каруселька
 	function carousel_main() {
 		var owl = $(".owl-carousel");
@@ -86,6 +124,23 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	//Telegram 
+	$('.project_text_img').click(function() {
+		$('.telegram_modal').fadeIn();
+		$('.dark_block').fadeIn();
+		$('body').addClass('overflow_hidden');
+	})
+	$('.telegram_modal .close_modal').click(function () {
+		$('.telegram_modal').fadeOut();
+		$('.dark_block').fadeOut();
+		$('body').removeClass('overflow_hidden');
+	})
+	$('.dark_block').click(function () {
+		$('.telegram_modal').fadeOut();
+		$('.start_modal').fadeOut();
+		$('.dark_block').fadeOut();
+		$('body').removeClass('overflow_hidden');
+	})
 	//Аудио
 	$(document).ready(function () {
 		$('.start_modal').fadeIn();
@@ -111,6 +166,7 @@ $(document).ready(function() {
 	})
 	$(document).on('keyup', function(e) {
 		if ( e.key == "Escape" ) {
+			$('.telegram_modal').fadeOut();
 			$('.start_modal').fadeOut();
 		  $('.dark_block').fadeOut();
 		  $('body').removeClass('overflow_hidden');

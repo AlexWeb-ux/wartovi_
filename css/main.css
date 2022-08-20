@@ -92,6 +92,7 @@ img {
 	background: rgba(52, 62, 92, 0.46);
 	z-index: 10;
 	display: none;
+	cursor: pointer;
 }
 .telegram_modal,
 .start_modal {

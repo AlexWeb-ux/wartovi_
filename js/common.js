@@ -1,21 +1,15 @@
-$(window).load(function() {
-	$(".loaderinner").delay(3000).fadeOut("slow"); 
-  $(".loader").delay(3200).slideUp("slow");
-});
-$(document).ready(function() {
-	//equalheight - одинаковая высота колонок
-	//var eqElement = ".cat_container > div, .home_news > div"
-	var eqElement = ".element"
-	$(window).load(function(){equalheight(eqElement);}).resize(function(){equalheight(eqElement);});
-	//Попап менеджер FancyBox
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	$(".fancybox").fancybox();
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
+function loadData() {
+	return new Promise((resolve, reject) => {
+		setTimeout(resolve, 2000);
+	})
+}
+loadData()
+	.then(() => {
+		let preloaderEl = document.getElementById('preloader');
+		preloaderEl.classList.add('hide');
+	});
+document.addEventListener('DOMContentLoaded', function() {
 	$(".top_mnu").navigation();
-	//Скролл до id, указанного в hash URL
 	var elem = window.location.hash;
 	if(elem) {
 		$.scrollTo(elem, 800, {
@@ -60,7 +54,7 @@ $(document).ready(function() {
 			count = 1;			
 			}
 		});
-	//Каруселька
+	//Carousel
 	function carousel_main() {
 		var owl = $(".owl-carousel");
 		owl.owlCarousel({
@@ -110,26 +104,7 @@ $(document).ready(function() {
 		}, 5000);
 	};
 	carousel_main();
-	//Аякс отправка форм
-	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("form").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
 	//Telegram 
-	$('.project_text_img').click(function() {
-		$('.telegram_modal').fadeIn();
-		$('.dark_block').fadeIn();
-		$('body').addClass('overflow_hidden');
-	})
 	$('.telegram_modal .close_modal').click(function () {
 		$('.telegram_modal').fadeOut();
 		$('.dark_block').fadeOut();
@@ -141,29 +116,29 @@ $(document).ready(function() {
 		$('.dark_block').fadeOut();
 		$('body').removeClass('overflow_hidden');
 	})
-	//Аудио
-	$(document).ready(function () {
-		$('.start_modal').fadeIn();
-		$('.dark_block').fadeIn();
-		$('body').addClass('overflow_hidden');
-	})	
-	$('#onSoundBtn').click(function () {
-		document.getElementById('audioFirst').play();
-		document.getElementById('1').classList.add('active');
-		$('.start_modal').fadeOut();
-		$('.dark_block').fadeOut();
-		$('body').removeClass('overflow_hidden');
-	})	
-	$('#offSoundBtn').click(function () {
-		$('.start_modal').fadeOut();
-		$('.dark_block').fadeOut();
-		$('body').removeClass('overflow_hidden');
-	})
-	$('.start_modal .close_modal').click(function () {
-		$('.start_modal').fadeOut();
-		$('.dark_block').fadeOut();
-		$('body').removeClass('overflow_hidden');
-	})
+	//Audio
+	//$(document).ready(function () {
+	//	$('.start_modal').fadeIn();
+	//	$('.dark_block').fadeIn();
+	//	$('body').addClass('overflow_hidden');
+	//})	
+	//$('#onSoundBtn').click(function () {
+		//document.getElementById('audioFirst').play();
+		//document.getElementById('1').classList.add('active');
+		//$('.start_modal').fadeOut();
+		//$('.dark_block').fadeOut();
+		//$('body').removeClass('overflow_hidden');
+	//})	
+	//$('#offSoundBtn').click(function () {
+		//$('.start_modal').fadeOut();
+		//$('.dark_block').fadeOut();
+		//$('body').removeClass('overflow_hidden');
+	//})
+	//$('.start_modal .close_modal').click(function () {
+	//	$('.start_modal').fadeOut();
+	//	$('.dark_block').fadeOut();
+	//	$('body').removeClass('overflow_hidden');
+	//})
 	$(document).on('keyup', function(e) {
 		if ( e.key == "Escape" ) {
 			$('.telegram_modal').fadeOut();
@@ -208,7 +183,6 @@ $(document).ready(function() {
 		$('.gallery_img').parent().parent().removeClass('flip');
 		$(this).parent().parent().addClass('flip');
 	});
-
 
 });
 

@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
-    <div class="loader">
+    <div class="loader" id="preloader">
       <div class="loaderinner"></div>
 			<div class="loader_arrow"></div>
     </div>
@@ -76,14 +76,7 @@
 				<div class="main_text">
 					<p>We present to your attention the project of Olena Kravets NFT WARTOVI.</p>
 					<a href="#" target="_blank" class="main_link">TO THE COLECTION</a>
-				</div>  
-				<div class="buttons hidden">
-					<a id="1">
-						<audio id="audioFirst" controls="" name="media" preload="auto" hidden>
-							<source src="./audio/dreams.mp3" type="audio/mp3" />
-						</audio>
-					</a> 
-			  </div>
+				</div> 
 			</div>	
 		</section>
     <section class="gallery" >
@@ -132,7 +125,7 @@
 												<div class="buttons">
 													 <a id="2">
 													  <audio id="audioSecond" controls="" name="media" preload="auto" hidden>
-														  <source src="./audio/ocheret.mp3" type="audio/mp3" />
+														  <source src="./audio/wheat.mp3" type="audio/mp3" />
 													  </audio>
 												  </a>
 											  </div> 
@@ -181,7 +174,7 @@
 												<div class="buttons">
 													<a id="3">	
 														<audio id="audioThird" controls="" name="media" preload="auto" hidden>
-															<source src="./audio/dreams.mp3" type="audio/mp3" />
+															<source src="./audio/wheat.mp3" type="audio/mp3" />
 														</audio>
 													</a>
 												</div> 
@@ -230,7 +223,7 @@
 												<div class="buttons">
 													<a id="4">	
 														<audio id="audioFourth" controls="" name="media" preload="auto" hidden>
-															<source src="./audio/dreams.mp3" type="audio/mp3" />
+															<source src="./audio/wheat.mp3" type="audio/mp3" />
 														</audio>
 													</a>
 												</div> 
@@ -279,7 +272,7 @@
 												<div class="buttons">
 													<a id="5">	
 														<audio id="audioFifth" controls="" name="media" preload="auto" hidden>
-															<source src="./audio/dreams.mp3" type="audio/mp3" />
+															<source src="./audio/wheat.mp3" type="audio/mp3" />
 														</audio>
 													</a>
 												</div> 
@@ -291,7 +284,7 @@
 						</div>
 						<div class="item">
 							<div class="gallery_visible">
-								<div class="gallery_img"></div>
+								<div class="gallery_img">	</div>
 								  <div class="gallery_text">
 										<div class="gallery_text_price">
 											<div class="price_name">Elena <br/>Kravets</div>
@@ -328,7 +321,7 @@
 												<div class="buttons">
 													<a id="6">	
 														<audio id="audioSixth" controls="" name="media" preload="auto" hidden>
-															<source src="./audio/dreams.mp3" type="audio/mp3" />
+															<source src="./audio/wheat.mp3" type="audio/mp3" />
 														</audio>
 													</a>
 												</div> 
@@ -352,16 +345,16 @@
 										<div class="buy_likes">
 											<span class="count">80</span>
 										</div>
-										<div class="buy_market">
-											<ul>
-												<li>
-													<a href="#" target="_blank" class="marketplace">TO MARKETPLACE</a>
-												</li>
-							 					<li>
-													<a href="#" target="_blank" class="buy">BUY NOW</a>
-												</li>
-											</ul>
-										</div>
+											<div class="buy_market">
+												<ul>
+													<li>
+														<a href="#" target="_blank" class="marketplace">TO MARKETPLACE</a>
+													</li>
+													<li>
+														<a href="#" target="_blank" class="buy">BUY NOW</a>
+													</li>
+												</ul>
+											</div>
 									</div>
 								</div>
 							</div>
@@ -377,7 +370,7 @@
 												<div class="buttons">
 													<a id="7">	
 														<audio id="audioSeventh" controls="" name="media" preload="auto" hidden>
-															<source src="./audio/dreams.mp3" type="audio/mp3" />
+															<source src="./audio/wheat.mp3" type="audio/mp3" />
 														</audio>
 													</a>
 												</div> 
@@ -390,8 +383,14 @@
 					</div>		
 				</div>
 				<!--div class="prev_button rotate_180"><img src="/img/arrow-slider.svg" alt="prev"></div-->
-				<div class="next_button"><img src="./img/arrow-slider.svg" alt="next"></div>
-				</div>
+				  <div class="next_button"><img src="./img/arrow-slider.svg" alt="next"></div>
+					<div class="buttons section_sound">
+						<a id="8">
+							<audio id="audioEighth" controls="" loop name="media" preload="auto" hidden>
+								<source src="./audio/wheat.mp3" type="audio/mp3" />
+							</audio>
+						</a> 
+					</div>	
 			</div>
 		</section>
 		<section class="about" >
@@ -491,8 +490,7 @@
 					</div>				
 				</div>
 			</div>	
-			<img src="./img/wheat-1.gif" alt="wheat" class="project_img_1">			
-			<img src="./img/wheat-2.gif" alt="wheat" class="project_img_2">	
+			<img src="./img/wheat-2.gif" loading="lazy" alt="wheat" class="project_img_2">	
 		</section>
 		<section class="team" >
       <div class="wraper">
@@ -532,9 +530,9 @@
 						</li>
 					</ul>				
 				</div>
-				<img src="./img/hands-icon.svg" alt="hands" class="partners_hands">
-				<img src="./img/wheat-3.gif" alt="wheat" class="partners_wheat">
-				<img src="./img/wheat-4.gif" alt="wheat" class="partners_wheat_1">
+				<img src="./img/hands-icon.svg" loading="lazy" alt="hands" class="partners_hands">
+				<img src="./img/wheat-3.gif" loading="lazy" alt="wheat" class="partners_wheat">
+				<img src="./img/wheat-4.gif" loading="lazy" alt="wheat" class="partners_wheat_1">
 			</div>
 		</section>
 		<section class="faq" >
@@ -555,7 +553,7 @@
 					</div>
 				</div>		
 			</div>
-			<img src="./img/bg-team-right.svg" alt="bg" class="faq_img" >
+			<img src="./img/bg-team-right.svg" loading="lazy" alt="bg" class="faq_img" >
 		</section>
 		<footer class="footer">
       <div class="wraper">
@@ -564,14 +562,23 @@
 				</div>
 				<div class="item_footer social">
 					<ul class="footer_list">
-						<li class="footer_item"><a class="footer_link" href="#">INSTAGRAM</a></li>
-						<li class="footer_item"><a class="footer_link" href="#">TWITTER</a></li>
-						<li class="footer_item"><a class="footer_link" href="#">DISCORD</a></li>
+						<li class="footer_item"><a class="footer_link" href="#" target="_blank">INSTAGRAM</a></li>
+						<li class="footer_item"><a class="footer_link" href="#" target="_blank">TWITTER</a></li>
+						<li class="footer_item"><a class="footer_link" href="#" target="_blank">DISCORD</a></li>
 					</ul>
 				</div>
 			</div>
 		</footer>
-		<div class="start_modal hidden">
+		<div class="sound_btn">
+			<div class="buttons">
+				<a id="1">
+					<audio id="audioFirst" controls="" loop name="media" preload="auto" hidden>
+						<source src="./audio/wheat.mp3" type="audio/mp3" />
+					</audio>
+				</a> 
+			</div>
+		</div>
+		<!--div class="start_modal hidden">
 			<a href="javascript:void(0);" class="close_modal"></a>
 			<p class="start_modal_header">Turn on/off the sound?</p>
 			<div class="start_modal_buttons">
@@ -582,7 +589,7 @@
 					<img src="./img/off-sound.svg" alt="sound">
 				</button>				
 			</div>
-		</div>
+		</div-->
 		<div class="telegram_modal hidden">
 			<a href="javascript:void(0);" class="close_modal"></a>
 			<p class="telegram_modal_header">Хочеш знати секрети створення WARTOVI? Зазирни за лаштунки!</p>
@@ -600,14 +607,11 @@
       <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
       <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
-    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
     <script src="libs/owl-carousel/owl.carousel.min.js"></script>
     <script src="libs/landing-nav/navigation.js"></script>
-    <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
-    <script src="libs/equalheight/jquery.equalheight.js"></script>
     <script src="js/common.js"></script>
     <!-- Google Analytics counter --><!-- /Google Analytics counter -->
   </body>

@@ -60,6 +60,11 @@ p {
 .hidden {
 	display: none;
 }
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
+}
 .carousel img {
 	width: 100%;
 	height: auto;
@@ -154,6 +159,23 @@ img {
 	background-repeat: no-repeat;
 	top: 0;
 }
+.sound_btn {
+	position: fixed;
+	left: 20px;
+	bottom: 70px;	
+}
+.sound_btn .buttons a::before {
+  content: "";
+  background-image: url(../img/on-sound.svg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #343e5c;
+  border-radius: 50px;
+}
+.sound_btn .buttons a.active::before {
+	background-image: url(../img/off-sound.svg);
+}
 /*loader*/
 .loader {
   background-image: url(../img/bg-loader.jpg);
@@ -184,20 +206,6 @@ img {
   position: absolute;
 	animation: 5s linear 0s normal none infinite running spiner;
   -webkit-animation: 5s linear 0s normal none infinite running spiner;
-}
-.loader_arrow {
-	background-image: url(../img/arrow.svg);
-	width: 80px;
-	height: 80px;
-	position: absolute;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: initial;
-	bottom: 0%;
-	left: 50%;
-	right: 50%;
-	margin-left: -40px;
-	cursor: pointer;
 }
 /*header*/
 header.header {
@@ -462,6 +470,13 @@ span.count::before {
 	right: 0px;
 	cursor: pointer;
 }
+section.gallery .section_sound a::before {
+	content: "";
+  background-image: url(../img/on-sound.svg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
 /*about section*/
 section.about {
 	background-image: url(../img/bg-blue.svg);
@@ -656,7 +671,7 @@ section.project .project_img_1 {
 	left: -30px;
 }
 section.project .project_img_2 {
-	max-width: 700px;
+	max-width: 650px;
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
@@ -738,16 +753,16 @@ section.partners .wraper .partners_hands {
 	bottom: 30px;
 }
 section.partners .wraper .partners_wheat {
-	max-width: 380px;
+	max-width: 160px;
 	position: absolute;
 	right: 260px;
-	top: -10px;
+	top: -45px;
 }
 section.partners .wraper .partners_wheat_1 {
 	max-width: 380px;
 	position: absolute;
 	right: 270px;
-	top: -60px;
+	top: -35px;
 }
 section.partners ul {
 	padding-left: 0px;
@@ -850,9 +865,6 @@ footer.footer .logo a {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-
-
-
 /*animation*/
 @keyframes spiner {
   0% {
@@ -868,5 +880,33 @@ footer.footer .logo a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+   -webkit-transform: rotateY(0deg);
+           transform: rotateY(0deg);
+  }
+  50%{
+   -webkit-transform: rotateY(90deg);
+           transform: rotateY(90deg);
+  }
+  100% {
+   -webkit-transform: rotateY(180deg);
+           transform: rotateY(180deg);
+  }
+}
+@keyframes spin {
+  0% {
+   -webkit-transform: rotateY(0deg);
+           transform: rotateY(0deg);
+  }
+  50%{
+   -webkit-transform: rotateY(90deg);
+           transform: rotateY(90deg);
+  }
+  100% {
+   -webkit-transform: rotateY(180deg);
+           transform: rotateY(180deg);
   }
 }

@@ -258,12 +258,16 @@ section.main {
 	align-items: center;
 	text-align: center;
 }
+section.main .wraper {
+	width: 1280px;
+}
 section.main .main_header h1 {
 	font-weight: 700;
 	margin-top: 50px;
 }
 section.main .main_text {
 	max-width: 700px;
+	margin: 0 auto;
 }
 section.main .main_text p {
   color: #fff;
@@ -469,13 +473,6 @@ span.count::before {
 	bottom: calc(40% - 36px);
 	right: 0px;
 	cursor: pointer;
-}
-section.gallery .section_sound a::before {
-	content: "";
-  background-image: url(../img/on-sound.svg);
-  position: absolute;
-  width: 50px;
-  height: 50px;
 }
 /*about section*/
 section.about {
@@ -829,6 +826,34 @@ section.faq .tab_text {
 	padding: 25px;
   font-size: 20px;
   line-height: 1.4;
+}
+/*section sound*/
+.section_sound {
+	position: absolute;
+}
+.section_sound::before {
+	content: "";
+	position: absolute;
+	background-image: url(../img/text-sound.svg);
+	width: 60px;
+	height: 60px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	animation: 8s linear 0s normal none infinite running spiner;
+  -webkit-animation: 8s linear 0s normal none infinite running spiner;
+}
+.section_sound a::before {
+	content: "";
+  background-image: url(../img/on-sound.svg);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.section_sound a.active::before {
+  background-image: url(../img/off-sound.svg);
 }
 /*footer*/
 footer.footer {

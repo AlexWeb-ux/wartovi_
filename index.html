@@ -28,6 +28,16 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
+		<script>
+			function loadData() {
+				return new Promise((resolve, reject) => {
+					setTimeout(resolve, 2000);}) }
+			loadData()
+				.then(() => {
+					let preloaderEl = document.getElementById('preloader');
+					preloaderEl.classList.add('hide');
+				});
+		</script>
   </head>
   <body>
     <div class="loader" id="preloader">

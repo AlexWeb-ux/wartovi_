@@ -1,13 +1,3 @@
-function loadData() {
-	return new Promise((resolve, reject) => {
-		setTimeout(resolve, 2000);
-	})
-}
-loadData()
-	.then(() => {
-		let preloaderEl = document.getElementById('preloader');
-		preloaderEl.classList.add('hide');
-	});
 document.addEventListener('DOMContentLoaded', function() {
 	$(".top_mnu").navigation();
 	var elem = window.location.hash;

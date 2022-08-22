@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
 	$(".top_mnu").navigation();
 	var elem = window.location.hash;
 	if(elem) {
@@ -152,15 +153,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			this.childNodes[1].play();
 		}
 	})
-	/*likes*/
-	const btn = document.querySelector('.buy_likes');
-  let like = true,
-  likeCount = document.querySelector('.count').innerHTML;
-  btn.addEventListener('click', () => {
-  likeCount = like ? ++likeCount : --likeCount;
-  like = !like;
-  document.querySelector('.count').innerHTML = likeCount;
-  });
 	/*Tabs*/
 	$('.tab_header').on('click', accord);
 	function accord(){

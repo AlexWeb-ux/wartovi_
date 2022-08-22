@@ -25,7 +25,7 @@ $.fn.navigation = function() {
 			complete: function() {
 				menuItems
 				.parent().removeClass("active")
-				.end().filter("[href*=" + href +"]").parent().addClass("active");
+				.end().filter('[href*=" + href +"]').parent().addClass("active");
 				setTimeout(function(){ noScrollAction = false; }, 10);
 			}
 		});

@@ -23,32 +23,19 @@
     <link rel="shortcut icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
-		<script>
-			function loadData() {
-				return new Promise((resolve, reject) => {
-					setTimeout(resolve, 2000);}) }
-			loadData()
-				.then(() => {
-					let preloaderEl = document.getElementById('preloader');
-					preloaderEl.classList.add('hide');
-				});
-		</script>
+		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
+
   </head>
   <body>
-    <div class="loader" id="preloader">
-      <div class="loaderinner"></div>
-			<div class="loader_arrow"></div>
-    </div>
+		<div class="loader">
+			<div class="loaderinner"></div>
+		</div>
     <header class="header">
       <div class="wraper">
-        <div class="item_header logo">
-          <a href="#"></a>
-        </div>
+        <div class="item_header logo"></div>
         <div class="item_header menu">
           <nav class="header_nav">
             <ul class="header_list top_mnu">
@@ -605,7 +592,7 @@
 					</div>
 				</div>		
 			</div>
-			<img src="./img/bg-team-right.svg" loading="lazy" alt="bg" class="faq_img" >
+			<img src="./img/bg-team-right.svg" alt="bg" class="faq_img" >
 		</section>
 		<footer class="footer">
       <div class="wraper">

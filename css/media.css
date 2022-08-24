@@ -616,6 +616,21 @@
 }
 @media only screen and (max-width : 380px) {
   section .wraper {
-    padding: 80px 10px;
+    padding: 80px 15px;
   }
+	section.gallery .slider .item .gallery_visible {
+    width: 345px;
+  }
+	section.gallery .slider .item .gallery_hidden {
+    width: 285px;
+  }
+}
+@media only screen and (max-width : 360px) {
+	section.gallery .slider .item .gallery_visible {
+    width: 330px;
+  }
+	section.gallery .slider .item .gallery_hidden {
+		width: 290px;
+		padding: 20px;
+	}
 }

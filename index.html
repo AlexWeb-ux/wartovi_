@@ -13,21 +13,16 @@
     <meta content="" property="og:description" />
     <meta content="" property="og:site_name" />
     <meta content="website" property="og:type" />
-
     <meta content="telephone=no" name="format-detection" />
     <meta http-equiv="x-rim-auto-match" content="none" />
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
-
     <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/fonts.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
 		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
-
   </head>
   <body>
 		<div class="loader">
@@ -62,6 +57,12 @@
 						</li>
 					</ul>
         </div>
+				<div class="item_header burger hidden">
+					<ul class="mobile_nav">
+						<li class="mobile_item menu_icon"><a href="javascript:void(0);"><img src="./img/burger.svg" alt="menu"></a></li>
+						<li class="mobile_item lang"><a class="header_link" href="/ua/">UA</a></li>
+					</ul>          				
+				</div>
       </div>
     </header>
     <section class="main" id="main">
@@ -88,6 +89,7 @@
 				<h2 id="gallery">Gallery</h2>
 				<p>To view the NFT, click on the image below.<br/>
 					Make sure you turn on the sound and volume it up.</p>
+				<p class="mobile-click">Click to read the poem</p>	
 				<div class="slider">
 					<div class="owl-carousel owl-theme">
 						<div class="item">
@@ -407,7 +409,7 @@
 						<p>Transfer any amount to the charity fund of the project, support modern Ukrainian art and become one of those who guarding the light even in the darkest times.</p>
 					</div>
 					<div class="support_item">
-						<a href="#" class="support" target="_blank">Support</a>
+						<p><a href="#" class="support" target="_blank">Support</a></p>
 					</div>
 				</div>
 				<div class="about_wrap">
@@ -443,7 +445,9 @@
 				<h2>Roadmap</h2>
 				<div class="roadmap_inner">
 					<div class="roadmap_img">
-						<img src="./img/logo-roadmap.svg" alt="roadmap">
+						<img src="./img/logo-roadmap.svg" class="desktop" alt="roadmap">
+						<img src="./img/logo-roadmap-m.svg" class="mobile" alt="roadmap">
+						<img src="./img/roadmap-small-mobile.svg" class="mobile-small" alt="roadmap">
 					</div>
 					<div class="roadmap_wrap">
 						<div class="roadmap_text">
@@ -646,11 +650,11 @@
       <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
       <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
-    <script src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
     <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="libs/landing-nav/navigation.js"></script>
+    <script src="libs/landing-nav/navigation.min.js"></script>
     <script src="js/common.js"></script>
     <!-- Google Analytics counter --><!-- /Google Analytics counter -->
   </body>

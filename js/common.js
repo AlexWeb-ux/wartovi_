@@ -57,14 +57,50 @@ document.addEventListener('DOMContentLoaded', function() {
 			responsiveClass:true,
       responsive:{
         0:{
-            items:1,
-            nav:false
+					items:1,
+					nav:false,
+					loop:false,
+					margin:25,
+					center:true,
+					dotsEach: true
         },
-        600:{
+        701:{
             items:2,
-            nav:false
+						nav:false,
+						loop:false,
+						margin:25,
+						center:true,
+						dotsEach: true
         },
-        1000:{
+				750:{
+					items:2,
+					nav:false,
+					loop:true,
+					margin:0,
+					dotsEach: true
+			  },
+				1024:{
+					items:3,
+					nav:false,
+					loop:true,
+					margin:0,
+					dotsEach: true
+			  },
+				1100:{
+					items:3,
+					nav:false,
+					loop:true,
+					margin:0,
+					dotsEach: true
+			  },
+				1150:{
+					items:3,
+					nav:false,
+					loop:true,
+					margin:0,
+					dotsEach: true
+			  },
+        1200:{
             items:3,
             nav:false,
             loop:true

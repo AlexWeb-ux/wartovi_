@@ -19,7 +19,7 @@
 }
 /*loader*/
 .loader {
-  background-image: url(../img/bg-loader.svg);
+  background-image: url(../img/loader-bg.jpg);
 	background-color: #fff;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -222,6 +222,7 @@ img {
 	position: fixed;
 	left: 20px;
 	bottom: 70px;	
+	z-index: 99;
 }
 .sound_btn .buttons a::before {
   content: "";
@@ -288,7 +289,7 @@ header.header .lang a {
 }
 /*main section*/
 section.main {
-	background-image: url(../img/bg-main.jpg);
+	background-image: url(../img/main-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	-o-object-fit: cover;
@@ -347,6 +348,9 @@ section.gallery {
 }
 section.gallery .wraper {
 	position: relative;
+}
+section.gallery .mobile-click {
+	display: none;
 }
 section.gallery .slider {
 	position: relative;
@@ -450,7 +454,7 @@ section.gallery .slider .item .gallery_text .gallery_text_price .price_num span:
 	background-position: center center;
   left: -15px;
 }
-.gallery_text_buy {
+section.gallery .gallery_text_buy {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -546,12 +550,12 @@ span.count::before {
 .next_button {
 	position: absolute;
 	bottom: calc(40% - 36px);
-	right: 0px;
+	right: 15px;
 	cursor: pointer;
 }
 /*about section*/
 section.about {
-	background-image: url(../img/bg-blue.svg);
+	background-image: url(../img/bg-blue.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -708,6 +712,12 @@ section.roadmap .roadmap_text_header {
 section.roadmap .roadmap_text_header img {
   height: 45px;
 	width: 40px;
+}
+section.roadmap .roadmap_img img.mobile {
+	display: none;
+}
+section.roadmap .roadmap_img .mobile-small {
+	display: none;
 }
 section.roadmap .roadmap_egg_1 {
  -webkit-transition: 0.4s;

@@ -90,23 +90,23 @@ document.addEventListener('DOMContentLoaded', function() {
 					items:3,
 					nav:false,
 					loop:true,
-					margin:0,
+					margin:10,
 					dotsEach: true
 			  },
 				1150:{
 					items:3,
 					nav:false,
 					loop:true,
-					margin:0,
+					margin:10,
 					dotsEach: true
 			  },
         1200:{
-            items:3,
-            nav:false,
-            loop:true
+          items:3,
+          nav:false,
+          loop:true,
+					margin:10						
         }
-    }
-			
+    }			
 		});
 		owl.on("mousewheel", ".owl-carousel", function (e) {
 			if (e.deltaY > 0) {

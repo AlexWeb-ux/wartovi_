@@ -310,6 +310,7 @@ section.main .wraper {
 section.main .main_header h1 {
 	font-weight: 700;
 	margin-top: 50px;
+	color: #fff;
 }
 section.main .main_text {
 	max-width: 700px;
@@ -326,7 +327,7 @@ section.main .main_text p {
 	height: 230px;
 }
 section.main .main_text a {
-	background-image: url(../img/bg-btn.svg);
+	background-image: url(../img/bg-blue-btn.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -384,7 +385,7 @@ section.gallery .slider .item .gallery_hidden {
 	height: 460px;
 	border-radius: 20px;
 	padding: 20px 30px;
-	width: 320px;
+	width: 310px;
 }
 section.gallery .slider .item.flip .gallery_hidden {	
 	-webkit-transition: 1s;	
@@ -494,7 +495,7 @@ span.count::before {
 	margin-left: 10px;
 }
 .buy_market ul li a {
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 500;
 }
 .buy_market ul li a.marketplace {
@@ -767,7 +768,7 @@ section.roadmap .roadmap_text_header::after {
 }
 /*project section*/
 section.project {
-	background-image: url(../img/bg-blue.svg);
+	background-image: url(../img/bg-blue.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -865,7 +866,7 @@ section.team ul li h4 span {
 }
 /*partners section*/
 section.partners {
-	background-image: url(../img/bg-blue.svg);
+	background-image: url(../img/bg-blue.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1003,7 +1004,7 @@ section.faq .tab_text {
 }
 /*footer*/
 footer.footer {
-	background-image: url(../img/bg-blue.svg);
+	background-image: url(../img/bg-blue.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
 	background-size: cover;

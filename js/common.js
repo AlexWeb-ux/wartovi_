@@ -131,6 +131,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		}, 5000);
 	};
 	carousel_main();
+	//Menu
+	$('.menu_icon').click(function () {
+		$('.burger_menu').fadeIn();
+	})
+	$('.header_list a').click(function () {
+		$('.burger_menu').fadeOut();
+	})
+	$('.burger_close').click(function () {
+		$('.burger_menu').fadeOut();
+	})
 	//Telegram 
 	$('.telegram_modal .close_modal').click(function () {
 		$('.telegram_modal').fadeOut();

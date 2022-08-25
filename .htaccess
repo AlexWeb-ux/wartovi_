@@ -3,11 +3,6 @@ php_value max_execution_time 30
 RewriteEngine On
 RewriteBase /
 
-# Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
-RewriteCond %{HTTP_HOST} .
-RewriteCond %{HTTP_HOST} !^site\.ru [NC]
-RewriteRule (.*) http://site.ru/$1 [R=301,L]
-
 # Rewrite index.html to /
 RewriteRule ^index\.html$ / [R=301,L]
 

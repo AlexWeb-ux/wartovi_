@@ -613,6 +613,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+	.telegram_link img {
+		width: 60px;
+	}
 }
 @media only screen and (max-width : 380px) {
   section .wraper {

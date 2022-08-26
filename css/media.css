@@ -427,6 +427,9 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.loader {
+    background-image: url(../img/loader-bg-m.jpg);
+	}
 	.item_header.social, .menu {
 		display: none;
 	}
@@ -678,7 +681,7 @@
     right: 5px;
   }
 	section.faq .tab_header {
-    font-size: 16px;
+    font-size: 15px;
     padding: 15px 0;
   }
 	footer.footer .wraper {

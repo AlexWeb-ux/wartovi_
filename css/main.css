@@ -79,7 +79,7 @@ body {
   font-size: 17px;
   min-width: 320px;
   position: relative;
-  max-width: 1900px;
+  max-width: 1980px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -835,6 +835,9 @@ section.project {
   object-fit: cover;
   position: relative;
 }
+section.project .wraper {
+	position: relative;
+}
 section.project .project_wrap {
   color: #fff;
   display: -webkit-box;
@@ -980,16 +983,16 @@ section.partners .partners_text h4 span {
   font-weight: 500;
 }
 section.partners .wraper .partners_hands {
-  max-width: 460px;
+  max-width: 450px;
   position: absolute;
-  right: 150px;
+  right: 160px;
   bottom: 30px;
 }
 section.partners .wraper .partners_wheat {
-  max-width: 160px;
+  max-width: 180px;
   position: absolute;
   right: 280px;
-  top: -45px;
+  top: -65px;
 	-webkit-animation: swing 5s ease-in-out infinite;
   animation: swing 5s ease-in-out infinite;
   -webkit-transform: rotate(-2deg);
@@ -1000,10 +1003,10 @@ section.partners .wraper .partners_wheat {
   transform-origin: bottom center;
 }
 section.partners .wraper .partners_wheat_1 {
-	max-width: 160px;
+	max-width: 200px;
 	position: absolute;
-	right: 380px;
-	top: -50px;
+	right: 370px;
+	top: -80px;
 	-webkit-animation: swing 5.1s ease-in-out infinite;
   animation: swing 5.1s ease-in-out infinite;
   -webkit-transform: rotate(-2deg);

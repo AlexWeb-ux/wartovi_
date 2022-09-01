@@ -212,5 +212,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		$(this).parent().parent().addClass('flip');
 	});
 
+
 });
 

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 *:focus {
   outline: none !important;
 }
@@ -19,6 +25,7 @@
 }
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 /*loader*/
 .loader {
@@ -390,7 +397,7 @@ svg.burger_close {
 /*gallery section*/
 section.gallery {
   background-image: url(../img/bg-brown.png);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -433,10 +440,10 @@ section.gallery .slider .item .gallery_hidden {
   opacity: 0;
   z-index: 0;
   background-color: #fff;
-  height: 460px;
+  height: 500px;
   border-radius: 20px;
   padding: 20px 30px;
-  width: 310px;
+  width: 370px;
 }
 section.gallery .slider .item.flip .gallery_hidden {
   -webkit-transition: 1s;
@@ -453,7 +460,7 @@ section.gallery .slider .item .gallery_hidden p {
 section.gallery .slider .item .gallery_img {
   height: 400px;
   background-image: url(../img/bg-product.jpg);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,7 +628,7 @@ span.count::before {
 /*about section*/
 section.about {
   background-image: url(../img/bg-blue.jpg);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -729,7 +736,7 @@ section.about .woman {
 /*roadmap section*/
 section.roadmap {
   background-image: url(../img/bg-brown.png);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -835,7 +842,7 @@ section.roadmap .roadmap_text_header::after {
 /*project section*/
 section.project {
   background-image: url(../img/bg-blue.jpg);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -844,7 +851,7 @@ section.project {
   position: relative;
 }
 section.project .wraper {
-	position: relative;
+  position: relative;
 }
 section.project .project_wrap {
   color: #fff;
@@ -868,7 +875,7 @@ section.project .project_img_1 {
 }
 section.project .project_img_2 {
   max-height: 800px;
-	width: auto;
+  width: auto;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -883,7 +890,7 @@ section.project .project_img_2 {
 }
 section.project .project_img_3 {
   max-height: 500px;
-	width: auto;
+  width: auto;
   position: absolute;
   bottom: 0;
   right: 340px;
@@ -898,7 +905,7 @@ section.project .project_img_3 {
 }
 section.project .project_img_4 {
   max-height: 680px;
-	width: auto;
+  width: auto;
   position: absolute;
   bottom: 0;
   right: 140px;
@@ -939,7 +946,7 @@ section.project .project_wrap .project_text .project_text_img span::before {
 /*team section*/
 section.team {
   background-image: url(../img/bg-brown.png);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -977,7 +984,7 @@ section.team ul li h4 span {
 /*partners section*/
 section.partners {
   background-image: url(../img/bg-blue.jpg);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1003,7 +1010,7 @@ section.partners .wraper .partners_wheat {
   position: absolute;
   right: 280px;
   top: -65px;
-	-webkit-animation: swing 5s ease-in-out infinite;
+  -webkit-animation: swing 5s ease-in-out infinite;
   animation: swing 5s ease-in-out infinite;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
@@ -1013,11 +1020,11 @@ section.partners .wraper .partners_wheat {
   transform-origin: bottom center;
 }
 section.partners .wraper .partners_wheat_1 {
-	max-width: 200px;
+	max-width: 205px;
 	position: absolute;
-	right: 370px;
-	top: -80px;
-	-webkit-animation: swing 5.1s ease-in-out infinite;
+	right: 360px;
+	top: -110px;
+  -webkit-animation: swing 5.1s ease-in-out infinite;
   animation: swing 5.1s ease-in-out infinite;
   -webkit-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
@@ -1052,7 +1059,7 @@ section.partners .partners_text ul {
 /*faq section*/
 section.faq {
   background-image: url(../img/bg-brown.png);
-	background-attachment: fixed;
+  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1104,9 +1111,8 @@ section.faq .tab_text {
 }
 /*section sound*/
 .section_sound {
-	width: 60px;
-	height: 60px;
-	margin-top: 10px;
+  position: absolute;
+  margin-top: 10px;
 }
 .section_sound::before {
   content: "";

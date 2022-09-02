@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-
 	$(".top_mnu").navigation();
 	var elem = window.location.hash;
 	if(elem) {

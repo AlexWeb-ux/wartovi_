@@ -46,7 +46,7 @@
     padding-left: 0;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 290px;
+    width: 350px;
   }
 	section.project .project_wrap .project_text .project_text_img {
     font-size: 50px;
@@ -88,7 +88,7 @@
     width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 270px;
+    width: 330px;
   }
 	section.gallery .owl-dots {
     text-align: right;
@@ -141,7 +141,7 @@
     width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 270px;
+    width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden p {
     font-size: 15px;
@@ -193,7 +193,7 @@
     width: 310px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 250px;
+    width: 310px;
   }
 	section.project .project_img_2 {
     max-height: 750px;
@@ -231,7 +231,7 @@
     width: 380px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 320px;
+    width: 380px;
   }
 	section.gallery .slider {
     padding-left: 30px;
@@ -357,7 +357,7 @@
     width: 350px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 290px;
+    width: 350px;
   }
 	section.about .about_text {
     -ms-flex-preferred-size: auto;
@@ -458,7 +458,7 @@
     width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 270px;
+    width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden p {
     font-size: 15px;
@@ -530,6 +530,11 @@
 	section.main .main_text {
     max-width: 350px;
     margin: 0 auto;
+	}
+	section.main .main_header h1 {
+    font-weight: 700;
+    margin-top: -20px;
+    color: #fff;
   }
 	.main_logo {
     height: 140px;
@@ -538,7 +543,7 @@
     width: 360px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 290px;
+    width: 360px;
   }
 	section.about .about_text ul li h4 {
     font-size: 20px;
@@ -615,8 +620,6 @@
     text-align: center;
     padding-left: 0;
   }
-}
-@media only screen and (max-width : 480px) {
 	header.header .logo {
     margin: 0px;
   }
@@ -644,12 +647,6 @@
     margin-left: 55px;
     z-index: 9;
 	}
-	section.gallery .slider .item .gallery_visible {
-    width: 350px;
-  }
-	section.gallery .slider .item .gallery_hidden {
-    width: 290px;
-  }
 	section.about .about_text ul li h4 {
     font-size: 18px;
   }
@@ -703,15 +700,25 @@
     width: 345px;
   }
 	section.gallery .slider .item .gallery_hidden {
-    width: 285px;
+    width: 345px;
+  }
+	section.main .main_header h1 {
+    font-weight: 700;
+    margin-top: 15px;
+    color: #fff;
   }
 }
 @media only screen and (max-width : 360px) {
+	section.main .main_header h1 {
+    font-weight: 700;
+    margin-top: 35px;
+    color: #fff;
+  }
 	section.gallery .slider .item .gallery_visible {
     width: 330px;
   }
 	section.gallery .slider .item .gallery_hidden {
-		width: 290px;
+		width: 330px;
 		padding: 20px;
 	}
 }

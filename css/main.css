@@ -404,6 +404,15 @@ section.gallery {
   -o-object-fit: cover;
   object-fit: cover;
 }
+section.gallery .section_sound::before {
+  background-image: url(../img/text-sound-blue.png);
+}
+section.gallery .section_sound a::before {
+	background-image: url(../img/on-sound-blue.svg);
+}
+section.gallery .section_sound a.active::before {
+	background-image: url(../img/off-sound-blue.svg);
+}
 section.gallery .wraper {
   position: relative;
 }
@@ -459,7 +468,6 @@ section.gallery .slider .item .gallery_hidden p {
 }
 section.gallery .slider .item .gallery_img {
   height: 400px;
-  background-image: url(../img/bg-product.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -467,6 +475,15 @@ section.gallery .slider .item .gallery_img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   cursor: pointer;
+}
+section.gallery .slider .item .gallery_img.project_1  {
+  background-image: url(../img/Kovdra.jpg);
+}
+section.gallery .slider .item .gallery_img.project_2 {
+  background-image: url(../img/Nezalegna.jpg);
+}
+section.gallery .slider .item .gallery_img.project_3 {
+  background-image: url(../img/Ukranian.jpg);
 }
 section.gallery .slider .item .gallery_text {
   background-color: #fff;
@@ -625,6 +642,14 @@ span.count::before {
   right: 15px;
   cursor: pointer;
 }
+b.title_gallery {
+	font-weight: 600;
+	font-size: 18px;
+}
+.gap {
+	display: block;
+	height: 10px;
+}
 /*about section*/
 section.about {
   background-image: url(../img/bg-blue.jpg);
@@ -742,6 +767,15 @@ section.roadmap {
   background-size: cover;
   -o-object-fit: cover;
   object-fit: cover;
+}
+section.roadmap .section_sound::before {
+  background-image: url(../img/text-sound-blue.png);
+}
+section.roadmap .section_sound a::before {
+	background-image: url(../img/on-sound-blue.svg);
+}
+section.roadmap .section_sound a.active::before {
+	background-image: url(../img/off-sound-blue.svg);
 }
 section.roadmap .wraper .roadmap_inner {
   display: -webkit-box;
@@ -952,6 +986,15 @@ section.team {
   background-size: cover;
   -o-object-fit: cover;
   object-fit: cover;
+}
+section.team .section_sound::before {
+  background-image: url(../img/text-sound-blue.png);
+}
+section.team .section_sound a::before {
+	background-image: url(../img/on-sound-blue.svg);
+}
+section.team .section_sound a.active::before {
+	background-image: url(../img/off-sound-blue.svg);
 }
 section.team ul {
   display: -webkit-box;

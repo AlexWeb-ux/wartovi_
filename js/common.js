@@ -53,12 +53,30 @@ document.addEventListener('DOMContentLoaded', function() {
 		//slideToClickedSlide: true,
 		loop: true,
     //initialSlide: 0,
-		navigation: {
-			nextEl: ".swiper-button-next",
-		},
 		breakpoints: {
+			360: {
+				slidesPerView: 1.0,
+				pagination: {
+          el: ".swiper-pagination",
+        },
+			},
+			650: {
+				slidesPerView: 1.5,
+			},
+			800: {
+				slidesPerView: 2.0,
+			},
 			1000: {
-				slidesPerView: 3,
+				slidesPerView: 2.4,
+			},
+			1100: {
+				slidesPerView: 2.6,
+			},
+			1200: {
+				slidesPerView: 3.0,
+				navigation: {
+					nextEl: ".swiper-button-next",
+				},
 			},
 		},
 	});
@@ -137,8 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			$(this).next().slideToggle(300);
 		}	
   /*Slider*/
-	$('.swiper-slide .gallery_img').click(function(e) {
-		e.preventDefault();
+	$('.swiper-slide .gallery_img').click(function() {
 		$('.gallery_img').parent().parent().removeClass('flip');
 		$(this).parent().parent().addClass('flip');
 	});

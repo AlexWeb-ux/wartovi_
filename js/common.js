@@ -62,15 +62,27 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 			650: {
 				slidesPerView: 1.5,
+				pagination: {
+          el: ".swiper-pagination",
+        },
 			},
 			800: {
 				slidesPerView: 2.0,
+				pagination: {
+          el: ".swiper-pagination",
+        },
 			},
 			1000: {
 				slidesPerView: 2.4,
+				pagination: {
+          el: ".swiper-pagination",
+        },
 			},
 			1100: {
 				slidesPerView: 2.6,
+				pagination: {
+          el: ".swiper-pagination",
+        },
 			},
 			1200: {
 				slidesPerView: 3.0,

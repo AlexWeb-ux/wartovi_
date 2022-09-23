@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/css/normalize.min.css" />
     <link rel="stylesheet" href="/css/fonts.min.css" />
+		<link	rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/main.min.css" />
     <link rel="stylesheet" href="/css/media.min.css" />
 		<link rel="stylesheet" href="/libs/owl-carousel/owl.carousel.min.css" />
@@ -103,78 +104,89 @@
 				<h2 id="gallery">Галерея</h2>
 				<p>Щоб переглянути NFT твір натисніть на картинку нижче.<br/>
 					Не забудьте ввімкнути звук та збільшити гучність.</p>
-				<p class="mobile-click">Натисніть для прочитання вірша</p>	
-				<div class="slider">
-					<div class="owl-carousel owl-theme">
-						<div class="item"> <!--slider item-->
+				<p class="mobile-click">Натисніть для прочитання вірша</p>
+				<div class="swiper slider__swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+								<div class="gallery_visible">
+									<div class="gallery_img">
+										<img src="../img/Kovdra.jpg" alt="slide_1">
+									</div>
+									<div class="gallery_text">
+										<div class="gallery_text_price">
+											<div class="price_name">Олена <br/>Кравець</div>
+											<div class="price_num">
+												Ціна <br />
+												<span>0.003</span>
+											</div>
+										</div>
+										<div class="gallery_text_buy">
+											<div class="buy_likes">
+												<span class="count">126</span>
+											</div>
+											<div class="buy_market">
+												<ul>
+													<li>
+														<a href="#" target="_blank" class="marketplace">ДО МАРКЕТПЛЕЙСУ</a>
+													</li>
+													<li>
+														<a href="#" target="_blank" class="buy">КУПИТИ</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery_hidden">
+									<div class="gallery_full">
+										<p><b class="title_gallery">Так холодно у напрузі, так холодно від біди.</b>
+											<span class="gap"></span>
+											Цієї весни мої друзі роз’їхались хто куди.
+											Так довго наша негода, багато для сліз підстав.
+											Я бачу усіх на фото, у зовсім різних містах.
+											<span class="gap"></span>
+											Говоримо всі однаково, викручуємось незримо.
+											Оксана тепер у Кракові, Марина тепер у Римі.
+											Адреси, яким довірились, і коди різних держав.
+											Надія тепер у Вільнюсі, а Настя вже у Варшаві.
+											<span class="gap"></span>
+											Олена тепер у Талліні. Аліна — у Братиславі...</p>
+										<div class="gallery_full_sound">
+											<ul>
+												<li><a href="#" target="_blank">read more</a></li>
+												<li>
+													<div class="buttons">
+														<a id="2">
+															<audio id="audioSecond" preload="auto" hidden>
+																<source
+																	src="../audio/wheat.mp3"
+																	type="audio/mp3"
+																/>
+															</audio>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="swiper-slide">
 							<div class="gallery_visible">
-								<div class="gallery_img project_1"></div>
+								<div class="gallery_img">
+									<img src="../img/Nezalegna.jpg" alt="slide_1">
+								</div>
 								<div class="gallery_text">
 									<div class="gallery_text_price">
 										<div class="price_name">Олена <br/>Кравець</div>
-										<div class="price_num">Ціна <br/>
+										<div class="price_num">
+											Ціна <br />
 											<span>0.003</span>
 										</div>
 									</div>
 									<div class="gallery_text_buy">
 										<div class="buy_likes">
 											<span class="count">126</span>
-										</div>
-										<div class="buy_market">
-											<ul>
-												<li>
-													<a href="#" target="_blank" class="marketplace">ДО МАРКЕТПЛЕЙСУ</a>
-												</li>
-												<li>
-													<a href="#" target="_blank" class="buy">КУПИТИ</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="gallery_hidden">
-								<div class="gallery_full">
-									<p><b class="title_gallery">Так холодно у напрузі, так холодно від біди.</b>
-										<span class="gap"></span>
-										Цієї весни мої друзі роз’їхались хто куди.
-										Так довго наша негода, багато для сліз підстав.
-										Я бачу усіх на фото, у зовсім різних містах.
-										<span class="gap"></span>
-										Говоримо всі однаково, викручуємось незримо.
-										Оксана тепер у Кракові, Марина тепер у Римі.
-										Адреси, яким довірились, і коди різних держав.
-										Надія тепер у Вільнюсі, а Настя вже у Варшаві.
-										<span class="gap"></span>
-										Олена тепер у Талліні. Аліна — у Братиславі...
-									<div class="gallery_full_sound">
-										<ul>
-											<li><a href="#" target="_blank">read more</a></li>
-											<li>
-												<div class="buttons">
-												  <a id="2">
-													  <audio id="audioSecond" preload="auto" hidden><source   src="../audio/wheat.mp3" type="audio/mp3" /></audio>
-												  </a>
-												</div> 										 
-										  </li>
-									  </ul>
-								  </div>
-							  </div>
-						  </div>
-					  </div>	<!--end item-->
-						<div class="item"> <!--slider item-->
-							<div class="gallery_visible">
-								<div class="gallery_img project_2"></div>
-								<div class="gallery_text">
-									<div class="gallery_text_price">
-										<div class="price_name">Олена <br/>Кравець</div>
-										<div class="price_num">Ціна <br/>
-											<span>0.003</span>
-										</div>
-									</div>
-									<div class="gallery_text_buy">
-										<div class="buy_likes">
-											<span class="count">110</span>
 										</div>
 										<div class="buy_market">
 											<ul>
@@ -206,35 +218,43 @@
 										Не тільки моєю, а цілих світів.
 										<span class="gap"></span>
 										Я знаю, що ти будеш гідністю
-										українських гетьманів і князів...									
+										українських гетьманів і князів...	</p>
 									<div class="gallery_full_sound">
 										<ul>
 											<li><a href="#" target="_blank">read more</a></li>
 											<li>
 												<div class="buttons">
-												  <a id="2">
-													  <audio id="audioSecond" preload="auto" hidden><source   src="../audio/wheat.mp3" type="audio/mp3" /></audio>
-												  </a>
-												</div> 										 
-										  </li>
-									  </ul>
-								  </div>
-							  </div>
-						  </div>
-					  </div>	<!--end item-->
-						<div class="item"> <!--slider item-->
+													<a id="2">
+														<audio id="audioSecond" preload="auto" hidden>
+															<source
+																src="./audio/wheat.mp3"
+																type="audio/mp3"
+															/>
+														</audio>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					  </div>
+						<div class="swiper-slide">
 							<div class="gallery_visible">
-								<div class="gallery_img project_3"></div>
+								<div class="gallery_img">
+									<img src="../img/Ukranian.jpg" alt="slide_3">
+								</div>
 								<div class="gallery_text">
 									<div class="gallery_text_price">
 										<div class="price_name">Олена <br/>Кравець</div>
-										<div class="price_num">Ціна <br/>
+										<div class="price_num">
+											Ціна <br />
 											<span>0.003</span>
 										</div>
 									</div>
 									<div class="gallery_text_buy">
 										<div class="buy_likes">
-											<span class="count">110</span>
+											<span class="count">126</span>
 										</div>
 										<div class="buy_market">
 											<ul>
@@ -265,26 +285,29 @@
 										Вдивляйся за себе і трошки за мене,
 										Допоки я погляд свій тру об приціл.
 										Так довго я буду твоїм полоненим
-										Як буде солоною сіль...
+										Як буде солоною сіль...	</p>
 									<div class="gallery_full_sound">
 										<ul>
 											<li><a href="#" target="_blank">read more</a></li>
 											<li>
 												<div class="buttons">
-												  <a id="2">
-													  <audio id="audioSecond" preload="auto" hidden><source   src="../audio/wheat.mp3" type="audio/mp3" /></audio>
-												  </a>
-												</div> 										 
-										  </li>
-									  </ul>
-								  </div>
-							  </div>
-						  </div>
-					  </div>	<!--end item-->							
-					</div>		
+													<a id="2">
+														<audio id="audioSecond" preload="auto" hidden>
+															<source	src="./audio/wheat.mp3"	type="audio/mp3"/>
+														</audio>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					  </div>						
+					</div>
 				</div>
-				<!--div class="prev_button rotate_180"><img src="/img/arrow-slider.svg" alt="prev"></div-->
-				  <div class="next_button"><img src="../img/arrow-slider.svg" alt="next"></div>
+				  <div class="swiper-pagination"></div> 
+				  <!-- next -->
+					<div class="swiper-button-next"></div>	
 					<div class="buttons section_sound">
 						<a id="8">
 							<audio id="audioEighth" preload="auto" hidden>
@@ -516,6 +539,7 @@
     <![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script async src="/libs/scrollto/jquery.scrollTo.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
     <script src="/libs/landing-nav/navigation.min.js"></script>
     <script src="/js/common.js"></script>

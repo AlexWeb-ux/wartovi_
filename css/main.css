@@ -634,10 +634,19 @@ b.title_gallery {
   width: 70px;
   height: 70px;
 }
-
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 30px;
+}
 .swiper-pagination-bullet {
   background-color: #fff;
 	opacity: 1;
+	width: 15px;
+	height: 15px;
+	border-radius: 5px;
+}
+.swiper-pagination-bullet-active {
+  width: 35px;
+	background-color: #d9bc9b;
 }
 /*about section*/
 section.about {

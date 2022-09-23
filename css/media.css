@@ -595,6 +595,9 @@
 	section.team ul li {
     width: calc( ( 100% - 20px ) / 1 );
   }
+	section.team ul li h4 span {
+    padding-bottom: 0px;
+  }
 	section.faq .tab_header {
     font-size: 18px;
   }

@@ -20,6 +20,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="css/normalize.min.css" />
     <link rel="stylesheet" href="css/fonts.min.css" />
+		<link	rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.min.css" />
     <link rel="stylesheet" href="css/media.min.css" />
     <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
@@ -86,14 +87,8 @@
       </div>
     </header>
     <div class="burger_menu hidden">
-      <svg
-        viewBox="0 0 32 32"
-        class="burger_close"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <style>
-            .cls-1 {
+      <svg viewBox="0 0 32 32" class="burger_close"  xmlns="http://www.w3.org/2000/svg">
+        <defs><style> .cls-1 {
               fill: none;
               stroke: #d9bc9b;
               stroke-linecap: round;
@@ -168,79 +163,213 @@
           Make sure you turn on the sound and volume it up.
         </p>
         <p class="mobile-click">Click to read the poem</p>
-        <div class="slider">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="gallery_visible">
-                <div class="gallery_img project_1"></div>
-                <div class="gallery_text">
-                  <div class="gallery_text_price">
-                    <div class="price_name">Elena <br />Kravets</div>
-                    <div class="price_num">
-                      Price <br />
-                      <span>0.003</span>
-                    </div>
-                  </div>
-                  <div class="gallery_text_buy">
-                    <div class="buy_likes">
-                      <span class="count">126</span>
-                    </div>
-                    <div class="buy_market">
-                      <ul>
-                        <li>
-                          <a href="#" target="_blank" class="marketplace"
-                            >TO MARKETPLACE</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#" target="_blank" class="buy">BUY NOW</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gallery_hidden">
-                <div class="gallery_full">
-                  <p><b class="title_gallery">Lorem ipsum dolor sit amet</b>
+				<div class="swiper slider__swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+								<div class="gallery_visible">
+									<div class="gallery_img">
+										<img src="./img/Kovdra.jpg" alt="slide_1">
+									</div>
+									<div class="gallery_text">
+										<div class="gallery_text_price">
+											<div class="price_name">Elena <br />Kravets</div>
+											<div class="price_num">
+												Price <br />
+												<span>0.003</span>
+											</div>
+										</div>
+										<div class="gallery_text_buy">
+											<div class="buy_likes">
+												<span class="count">126</span>
+											</div>
+											<div class="buy_market">
+												<ul>
+													<li>
+														<a href="#" target="_blank" class="marketplace"
+															>TO MARKETPLACE</a
+														>
+													</li>
+													<li>
+														<a href="#" target="_blank" class="buy">BUY NOW</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gallery_hidden">
+									<div class="gallery_full">
+										<p><b class="title_gallery">Lorem ipsum dolor sit amet</b>
+											<span class="gap"></span>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+											do eiusmod tempor incididunt ut labore et dolore magna
+											aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+											ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											Duis aute irure dolor in reprehenderit in voluptate velit
+											esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+											occaecat cupidatat non proident, sunt in culpa qui officia
+											deserunt mollit anim id est laborum. Ut enim ad minim
+											veniam, quis nostrud exercitation ullamco laboris nisi ut
+											aliquip ex ea commodo...
+										</p>
+										<div class="gallery_full_sound">
+											<ul>
+												<li><a href="#" target="_blank">read more</a></li>
+												<li>
+													<div class="buttons">
+														<a id="2">
+															<audio id="audioSecond" preload="auto" hidden>
+																<source
+																	src="./audio/wheat.mp3"
+																	type="audio/mp3"
+																/>
+															</audio>
+														</a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="gallery_visible">
+								<div class="gallery_img">
+									<img src="./img/Nezalegna.jpg" alt="slide_1">
+								</div>
+								<div class="gallery_text">
+									<div class="gallery_text_price">
+										<div class="price_name">Elena <br />Kravets</div>
+										<div class="price_num">
+											Price <br />
+											<span>0.003</span>
+										</div>
+									</div>
+									<div class="gallery_text_buy">
+										<div class="buy_likes">
+											<span class="count">126</span>
+										</div>
+										<div class="buy_market">
+											<ul>
+												<li>
+													<a href="#" target="_blank" class="marketplace"
+														>TO MARKETPLACE</a
+													>
+												</li>
+												<li>
+													<a href="#" target="_blank" class="buy">BUY NOW</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery_hidden">
+								<div class="gallery_full">
+									<p><b class="title_gallery">Lorem ipsum dolor sit amet</b>
 										<span class="gap"></span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo...
-                  </p>
-                  <div class="gallery_full_sound">
-                    <ul>
-                      <li><a href="#" target="_blank">read more</a></li>
-                      <li>
-                        <div class="buttons">
-                          <a id="2">
-                            <audio id="audioSecond" preload="auto" hidden>
-                              <source
-                                src="./audio/wheat.mp3"
-                                type="audio/mp3"
-                              />
-                            </audio>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--div class="prev_button rotate_180"><img src="/img/arrow-slider.svg" alt="prev"></div-->
-        <div class="next_button">
-          <img src="./img/arrow-slider.svg" alt="next" />
-        </div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident, sunt in culpa qui officia
+										deserunt mollit anim id est laborum. Ut enim ad minim
+										veniam, quis nostrud exercitation ullamco laboris nisi ut
+										aliquip ex ea commodo...
+									</p>
+									<div class="gallery_full_sound">
+										<ul>
+											<li><a href="#" target="_blank">read more</a></li>
+											<li>
+												<div class="buttons">
+													<a id="2">
+														<audio id="audioSecond" preload="auto" hidden>
+															<source
+																src="./audio/wheat.mp3"
+																type="audio/mp3"
+															/>
+														</audio>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					  </div>
+						<div class="swiper-slide">
+							<div class="gallery_visible">
+								<div class="gallery_img">
+									<img src="./img/Ukranian.jpg" alt="slide_3">
+								</div>
+								<div class="gallery_text">
+									<div class="gallery_text_price">
+										<div class="price_name">Elena <br />Kravets</div>
+										<div class="price_num">
+											Price <br />
+											<span>0.003</span>
+										</div>
+									</div>
+									<div class="gallery_text_buy">
+										<div class="buy_likes">
+											<span class="count">126</span>
+										</div>
+										<div class="buy_market">
+											<ul>
+												<li>
+													<a href="#" target="_blank" class="marketplace"
+														>TO MARKETPLACE</a
+													>
+												</li>
+												<li>
+													<a href="#" target="_blank" class="buy">BUY NOW</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gallery_hidden">
+								<div class="gallery_full">
+									<p><b class="title_gallery">Lorem ipsum dolor sit amet</b>
+										<span class="gap"></span>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+										ullamco laboris nisi ut aliquip ex ea commodo consequat.
+										Duis aute irure dolor in reprehenderit in voluptate velit
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident, sunt in culpa qui officia
+										deserunt mollit anim id est laborum. Ut enim ad minim
+										veniam, quis nostrud exercitation ullamco laboris nisi ut
+										aliquip ex ea commodo...
+									</p>
+									<div class="gallery_full_sound">
+										<ul>
+											<li><a href="#" target="_blank">read more</a></li>
+											<li>
+												<div class="buttons">
+													<a id="2">
+														<audio id="audioSecond" preload="auto" hidden>
+															<source
+																src="./audio/wheat.mp3"
+																type="audio/mp3"
+															/>
+														</audio>
+													</a>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					  </div>						
+					</div>
+				</div>
+				  <!-- next -->
+					<div class="swiper-button-next"></div>
         <div class="buttons section_sound">
           <a id="8">
             <audio id="audioEighth" preload="auto" hidden>
@@ -685,6 +814,7 @@
     <![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script async src="libs/scrollto/jquery.scrollTo.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="libs/owl-carousel/owl.carousel.min.js"></script>
     <script src="libs/landing-nav/navigation.min.js"></script>
     <script src="js/common.js"></script>

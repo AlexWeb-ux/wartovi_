@@ -44,92 +44,24 @@ document.addEventListener('DOMContentLoaded', function() {
 			count = 1;			
 			}
 		});
-	//Carousel
-	function carousel_main() {
-		var owl = $(".owl-carousel");
-		owl.owlCarousel({
-			loop: true,
-			nav: true,
-			margin:0,
-			dots: true,
-			mouseDrag: false,
-			responsiveClass:true,
-      responsive:{
-        0:{
-					items:1,
-					nav:false,
-					loop:false,
-					margin:25,
-					center:true,
-					dotsEach: true
-        },
-        701:{
-            items:2,
-						nav:false,
-						loop:false,
-						margin:25,
-						center:true,
-						dotsEach: true
-        },
-				750:{
-					items:2,
-					nav:false,
-					loop:true,
-					margin:0,
-					dotsEach: true
-			  },
-				1024:{
-					items:3,
-					nav:false,
-					loop:true,
-					margin:0,
-					dotsEach: true
-			  },
-				1100:{
-					items:3,
-					nav:false,
-					loop:true,
-					margin:10,
-					dotsEach: true
-			  },
-				1150:{
-					items:3,
-					nav:false,
-					loop:true,
-					margin:10,
-					dotsEach: true
-			  },
-        1200:{
-          items:3,
-          nav:false,
-          loop:true,
-					margin:10						
-        }
-    }			
-		});
-		owl.on("mousewheel", ".owl-carousel", function (e) {
-			if (e.deltaY > 0) {
-				owl.trigger('prev.owl.carousel', [300]);
-			} else {
-				owl.trigger('next.owl.carousel');
-			}
-			e.preventDefault();
-		});
-		$(".next_button").click(function() {
-			owl.trigger('next.owl.carousel');
-		});
-		$(".prev_button").click(function() {
-			owl.trigger('prev.owl.carousel', [300]);
-		});
-		owl.on("resized.owl.carousel", function(event) {
-			var $this = $(this);
-			$this.find(".owl-height").css("height", $this.find(".owl-item.active").height());
-		});
-		setTimeout(function() {
-			owl.find(".owl-height").css("height", owl.find(".owl-item.active").height());
-		}, 5000);
-	};
-	carousel_main();
+	//swiper
+	var swiper = new Swiper(".slider__swiper", {
+    effect: 'slide',
+    spaceBetween: 30,
+    //centeredSlides: true,
+    //grabCursor: true,
+		//slideToClickedSlide: true,
+		loop: true,
+    //initialSlide: 0,
+		navigation: {
+			nextEl: ".swiper-button-next",
+		},
+		breakpoints: {
+			1000: {
+				slidesPerView: 3,
+			},
+		},
+	});
 	//Menu
 	$('.menu_icon').click(function () {
 		$('.burger_menu').fadeIn();
@@ -205,12 +137,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			$(this).next().slideToggle(300);
 		}	
   /*Slider*/
-	$('.owl-stage .gallery_img').click(function(e) {
+	$('.swiper-slide .gallery_img').click(function(e) {
 		e.preventDefault();
 		$('.gallery_img').parent().parent().removeClass('flip');
 		$(this).parent().parent().addClass('flip');
 	});
-
+	$('.gallery_full p').click(function() {
+		$('.swiper-slide').removeClass('flip');
+	});
 
 });
 

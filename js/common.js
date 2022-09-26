@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				slidesPerView: 3.0,
 				navigation: {
 					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
 				},
 			},
 		},

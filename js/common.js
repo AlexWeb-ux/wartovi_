@@ -176,5 +176,26 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('.swiper-slide').removeClass('flip');
 	});
 
+	$('.content_toggle').click(function(){
+		$('.hidden_block').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$('.content_toggle').html('Read more');
+			} else {
+				$('.content_toggle').html('Hide text');
+			}							
+		});
+		return false;
+	});
+	$('.content_toggle_ua').click(function(){
+		$('.hidden_block').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$('.content_toggle_ua').html('Читати повністю');
+			} else {
+				$('.content_toggle_ua').html('Приховати текст');
+			}							
+		});
+		return false;
+	});
+
 });
 

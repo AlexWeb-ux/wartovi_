@@ -444,6 +444,10 @@
 	.hide_mobile {
 		display: none;
 	}
+	.visible_mobile {
+    display: block;
+		margin-bottom: 15px;
+	}
 	section.about .about_text ul li h4 {
     font-size: 20px;
   }

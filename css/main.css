@@ -160,6 +160,9 @@ img {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+.visible_mobile {
+	display: none;
+}
 /*modal blocks*/
 .dark_block {
   position: fixed;
@@ -1008,10 +1011,19 @@ section.project .project_wrap .project_text .project_text_img span::before {
   left: 0;
   bottom: 10px;
 }
+a.content_toggle {
+  color: #d9bc9b;
+	text-decoration: underline;
+	font-size: 18px;
+}
+a.content_toggle_ua {
+  color: #d9bc9b;
+	text-decoration: underline;
+	font-size: 18px;
+}
 /*team section*/
 section.team {
   background-image: url(../img/bg-brown.png);
-
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

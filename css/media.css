@@ -517,15 +517,39 @@
     margin-top: -20px;
     color: #fff;
   }
-	.main_logo {
-    height: 140px;
-  }
 	.hide_mobile {
 		display: none;
 	}
 	.visible_mobile {
     display: block;
 		margin-bottom: 15px;
+	}
+	header.header .logo {
+    margin: 0px;
+  }
+	.main_logo {
+    height: 115px;
+  }
+	section.main .main_text p {
+    font-size: 20px;
+  }
+	section.gallery .mobile-click {
+    display: block;
+    max-width: 115px;
+		position: relative;
+  }
+	section.gallery .mobile-click::after {
+		content: "";
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    background-image: url(../img/arrow-4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 0;
+    margin-left: 55px;
+    z-index: 9;
 	}
 	section.about .about_text ul li h4 {
     font-size: 20px;
@@ -580,6 +604,31 @@
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
+	section.gallery,
+	section.faq,
+	section.roadmap,
+	section.team {
+    background-image: url(../img/bg-brown_mobile.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer.footer,
+section.partners,
+section.project {
+	background-image: url(../img/bg-blue_mobile.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+footer.about {
+	background-image: url(../img/bg-blueabout_mobile.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 	section.team ul li {
     width: 100%;
   }
@@ -590,58 +639,6 @@
 	section.team ul li h4 span {
     padding-bottom: 10px;
   }
-	section.faq .tab_header {
-    font-size: 18px;
-  }
-	section.faq .tab_text {
-    font-size: 16px;
-  }
-	section.faq .faq_img {
-    display: none;
-  }
-	section.faq .tab_header::after {
-    width: 20px;
-    height: 20px;
-    bottom: calc(50% - 15px);
-  }
-	footer.footer .wraper {
-    padding: 30px 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-	footer.footer .footer_list {
-    text-align: center;
-    padding-left: 0;
-  }
-	header.header .logo {
-    margin: 0px;
-  }
-	.main_logo {
-    height: 115px;
-  }
-	section.main .main_text p {
-    font-size: 20px;
-  }
-	section.gallery .mobile-click {
-    display: block;
-    max-width: 115px;
-		position: relative;
-  }
-	section.gallery .mobile-click::after {
-		content: "";
-    position: absolute;
-    width: 100px;
-    height: 85px;
-    background-image: url(../img/arrow-4.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    top: 0;
-    margin-left: 55px;
-    z-index: 9;
-	}
 	section.about .about_text ul li h4 {
     font-size: 18px;
   }
@@ -661,20 +658,34 @@
 	section.partners ul li h4 {
     font-size: 25px;
   }
-	section.faq .tab_header::after {
-    bottom: calc(50% - 15px);
-    right: 5px;
-  }
 	section.faq .tab_header {
+    font-size: 20px;
+    padding: 15px 75px 15px 0px;
+		margin-bottom: 15px;
+  }
+	section.faq .tab_text {
     font-size: 16px;
-    padding: 15px 0;
+		padding: 0;
+  }
+	section.faq .faq_img {
+    display: none;
+  }
+	section.faq .tab_header::after {
+    width: 20px;
+    height: 20px;
+		right: 5px;
+    bottom: calc(50% - 15px);
   }
 	footer.footer .wraper {
-    padding: 10px;
+    padding: 30px 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+	footer.footer .footer_list {
+    text-align: center;
+    padding-left: 0;
   }
 	.telegram_link img {
 		width: 60px;

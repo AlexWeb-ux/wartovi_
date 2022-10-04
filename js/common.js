@@ -48,19 +48,17 @@ document.addEventListener('DOMContentLoaded', function() {
     let countteam = 0;
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop() + $(window).height();
-			var offset = $team.offset().top + $team.height();
-			//start
-		  //	var offset = $element.offset().top
+			var offset = $team.offset().top + $team.height() - 180;
 		 if (scroll > offset && countteam == 0) {
 			setTimeout(function() {				
 				$(".team_num_1").css("opacity","1");
-		  }, 300);
+		  }, 200);
 			setTimeout(function() {
 				$(".team_num_2").css("opacity","1");
-		  }, 600);
+		  }, 500);
 			setTimeout(function() {
 				$(".team_num_3").css("opacity","1");
-		  }, 900);				
+		  }, 800);				
 			  countteam = 1;
 			}
 		});

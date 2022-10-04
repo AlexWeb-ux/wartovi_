@@ -34,8 +34,6 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  -o-object-fit: cover;
-  object-fit: cover;
   z-index: 9999;
   overflow: hidden;
   position: fixed;
@@ -57,7 +55,7 @@ html {
     top: 0vw;
   }
   to {
-    top: -100vw;
+    top: -100vh;
   }
 }
 @keyframes hidePreloader {
@@ -65,7 +63,7 @@ html {
     top: 0vw;
   }
   to {
-    top: -100vw;
+    top: -100vh;
   }
 }
 .loaderinner {
@@ -89,7 +87,7 @@ body {
   font-size: 17px;
   min-width: 320px;
   position: relative;
-  max-width: 1980px;
+  max-width: 1940px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -294,15 +292,15 @@ header.header .header_list {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0px;
+  margin: 0px;  
 }
-header.header .menu .header_list {
-  gap: 50px;
+header.header .menu .header_list li {
   font-size: 18px;
   font-weight: 400;
+	margin-left: 30px;
 }
-header.header .social .header_list {
-  gap: 25px;
+header.header .social .header_list li {
+  margin-left: 25px;
 }
 header.header .lang a {
   background-color: #d9bc9b;
@@ -314,8 +312,6 @@ section.main {
   background-image: url(../img/main-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-  object-fit: cover;
   height: 850px;
   background-size: cover;
   display: -webkit-box;
@@ -351,10 +347,8 @@ section.main .main_text p {
 section.main .main_text a {
   background-image: url(../img/bg-blue-btn.jpg);
   background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
   font-size: 20px;
   font-weight: 400;
   padding: 25px 65px;
@@ -400,10 +394,8 @@ svg.burger_close {
 section.gallery {
   background-image: url(../img/bg-brown.png);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
 }
 section.gallery .section_sound::before {
   background-image: url(../img/text-sound-blue.png);
@@ -466,8 +458,6 @@ section.gallery .swiper-slide .gallery_img img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -620,6 +610,10 @@ span.count::before {
   width: 50px;
   height: 50px;
 }
+.slider_wraper {
+  max-width: 1150px;
+  margin: 0 auto;
+}
 .next_button {
   position: absolute;
   bottom: calc(40% - 36px);
@@ -635,11 +629,11 @@ b.title_gallery {
   height: 10px;
 }
 .swiper-button-next {
-  right: -50px;
+  right: 0px;
   top: 60%;
 }
 .swiper-button-prev {
-  left: -50px;
+  left: 0px;
   top: 60%;
 }
 .swiper-button-next:after {
@@ -681,8 +675,8 @@ b.title_gallery {
 section.about {
   background-image: url(../img/bg-blue.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: auto;
   position: relative;
 }
 section.about .section_sound {
@@ -781,21 +775,21 @@ section.about .about_text ul li h4 span {
 section.about .about_text ul li p {
   margin-right: 50px;
 }
+section.about .about_img {
+	position: relative;
+}
 section.about .about_img img {
   position: absolute;
-  bottom: 0;
-  right: 20px;
-  width: 480px;
+  bottom: -80px;
+  right: 0px;
+  width: 400px;
 }
 /*roadmap section*/
 section.roadmap {
   background-image: url(../img/bg-brown.png);
-
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
 }
 section.roadmap .section_sound::before {
   background-image: url(../img/text-sound-blue.png);
@@ -909,10 +903,8 @@ section.roadmap .roadmap_text_header::after {
 section.project {
   background-image: url(../img/bg-blue.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
   position: relative;
 }
 section.project .wraper {
@@ -1025,10 +1017,8 @@ a.content_toggle_ua {
 section.team {
   background-image: url(../img/bg-brown.png);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
 }
 section.team .section_sound::before {
   background-image: url(../img/text-sound-blue.png);
@@ -1058,12 +1048,26 @@ section.team ul {
 }
 section.team ul li {
   list-style-type: none;
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - 90px) / 3);
 }
 section.team ul li h4 {
   margin: 30px 0;
-  font-size: 36px;
+  font-size: 30px;
   color: #343e5c;
+	position: relative;
+}
+.team_num_1, .team_num_2, .team_num_3 {
+	opacity: 0;
+	-webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+section.team ul li h4 img {
+  width: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	margin-left: 10px;
 }
 section.team ul li h4 span {
   padding-bottom: 10px;
@@ -1074,10 +1078,8 @@ section.team ul li h4 span {
 section.partners {
   background-image: url(../img/bg-blue.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
 }
 section.partners .wraper {
   position: relative;
@@ -1150,12 +1152,9 @@ section.partners .partners_text ul {
 /*faq section*/
 section.faq {
   background-image: url(../img/bg-brown.png);
-
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
   position: relative;
 }
 section.faq .faq_img {
@@ -1203,7 +1202,7 @@ section.faq .tab_text {
 /*section sound*/
 .section_sound {
   position: absolute;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 .section_sound::before {
   content: "";
@@ -1233,10 +1232,8 @@ section.faq .tab_text {
 footer.footer {
   background-image: url(../img/bg-blue.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-  object-fit: cover;
+  background-repeat: repeat;
+  background-size: auto;
 }
 footer.footer .wraper {
   padding: 50px 15px;

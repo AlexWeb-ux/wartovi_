@@ -44,48 +44,81 @@ document.addEventListener('DOMContentLoaded', function() {
 			count = 1;			
 			}
 		});
+		var $team = $('.team');
+    let countteam = 0;
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop() + $(window).height();
+			var offset = $team.offset().top + $team.height();
+			//start
+		  //	var offset = $element.offset().top
+		 if (scroll > offset && countteam == 0) {
+			setTimeout(function() {				
+				$(".team_num_1").css("opacity","1");
+		  }, 300);
+			setTimeout(function() {
+				$(".team_num_2").css("opacity","1");
+		  }, 600);
+			setTimeout(function() {
+				$(".team_num_3").css("opacity","1");
+		  }, 900);				
+			  countteam = 1;
+			}
+		});
+
 	//swiper
 	var swiper = new Swiper(".slider__swiper", {
     effect: 'slide',
-    spaceBetween: 30,
     //centeredSlides: true,
     //grabCursor: true,
 		//slideToClickedSlide: true,
 		loop: true,
     //initialSlide: 0,
 		breakpoints: {
-			360: {
-				slidesPerView: 1.0,
+			350: {
+				slidesPerView: 1.1,
+				spaceBetween: 10,
 				pagination: {
           el: ".swiper-pagination",
         },
 			},
 			650: {
 				slidesPerView: 1.5,
+				spaceBetween: 20,
+				pagination: {
+          el: ".swiper-pagination",
+        },
+			},
+			768: {
+				slidesPerView: 1.8,
+				spaceBetween: 20,
 				pagination: {
           el: ".swiper-pagination",
         },
 			},
 			800: {
 				slidesPerView: 2.0,
+				spaceBetween: 30,
 				pagination: {
           el: ".swiper-pagination",
         },
 			},
 			1000: {
-				slidesPerView: 2.4,
+				slidesPerView: 2.5,
+				spaceBetween: 30,
 				pagination: {
           el: ".swiper-pagination",
         },
 			},
 			1100: {
 				slidesPerView: 2.6,
+				spaceBetween: 30,
 				pagination: {
           el: ".swiper-pagination",
         },
 			},
 			1200: {
 				slidesPerView: 3.0,
+				spaceBetween: 30,
 				navigation: {
 					nextEl: ".swiper-button-next",
 					prevEl: ".swiper-button-prev",

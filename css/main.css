@@ -436,7 +436,7 @@ section.gallery .swiper-slide .gallery_hidden {
   opacity: 0;
   z-index: 0;
   background-color: #fff;
-  height: 480px;
+  height: 485px;
   border-radius: 20px;
   padding: 20px 30px;
 }
@@ -451,8 +451,9 @@ section.gallery .swiper-slide.flip .gallery_hidden {
 }
 section.gallery .gallery_full p,
 section.gallery .swiper-slide .gallery_img {
-  height: 380px;
+  height: 385px;
   cursor: pointer;
+	overflow: hidden;
 }
 section.gallery .swiper-slide .gallery_img img {
   display: block;

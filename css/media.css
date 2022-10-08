@@ -691,6 +691,20 @@ footer.about {
 		width: 60px;
 	}
 }
+@media only screen and (max-width : 390px) {
+	section.gallery .swiper-slide {
+    height: 450px;
+  }
+  section.gallery .gallery_full p, section.gallery .swiper-slide .gallery_img {
+	  height: 350px;
+  }
+  section.gallery .swiper-slide .gallery_hidden {
+	  height: 435px;
+  }
+	section.gallery .swiper-slide .gallery_full p {
+    font-size: 15px;
+	}
+}
 @media only screen and (max-width : 380px) {
   section .wraper {
     padding: 80px 15px;

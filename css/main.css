@@ -457,7 +457,6 @@ section.gallery .swiper-slide .gallery_img {
 }
 section.gallery .swiper-slide .gallery_img img {
   display: block;
-  width: 100%;
   height: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
